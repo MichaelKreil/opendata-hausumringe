@@ -1,4 +1,4 @@
 
 *.geojsonl
-node_modules/
 data/geo/
+node_modules/
