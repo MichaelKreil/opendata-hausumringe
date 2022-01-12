@@ -1,0 +1,26 @@
+{
+  "name": "opendata-hausumringe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "opendata-hausumringe": "bin/generate_web.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichaelKreil/opendata-hausumringe.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MichaelKreil/opendata-hausumringe/issues"
+  },
+  "homepage": "https://github.com/MichaelKreil/opendata-hausumringe#readme",
+  "dependencies": {
+    "mustache": "^4.2.0",
+    "yaml": "^1.10.2"
+  }
+}

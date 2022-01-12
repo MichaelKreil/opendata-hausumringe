@@ -1,2 +1,3 @@
 
 *.geojsonl
+node_modules/

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		body {
+			font-family: sans-serif;
+			max-width: 600px;
+			margin: 100px auto;
+		}
+		table {
+			margin: 50px 0;
+		}
+		table td {
+			border-top: solid 0.5px #ddd;
+		}
+	</style>
+</head>
+<body>
+
+	<table>
+		<tr>
+			<th>
+				Lizenzen Hausumringe<br>
+				{{{mapUmringe}}}
+			</th>
+			<th>
+				Lizenzen Hauskoordinaten<br>
+				{{{mapKoordinaten}}}
+			</th>
+		</tr>
+	</table>
+	<table>
+		<thead>
+			<tr><th>Bundesland</th><th>Lizenz Hausumringe</th><th>Lizenz Hauskoordinaten</th></tr>
+		</thead>
+		<tbody>
+		{{#bundeslaender}}
+			<tr>
+				<td>{{name}}</td>
+				{{#Hausumringe}}
+				<td style="color: {{color}}">{{{licenseLabel}}}</td>
+				{{/Hausumringe}}
+				{{#Hauskoordinaten}}
+				<td style="color: {{color}}">{{{licenseLabel}}}</td>
+				{{/Hauskoordinaten}}
+			</tr>
+		{{/bundeslaender}}
+		</tbody>
+	</table>
+</body>
+</html>
