@@ -3,21 +3,21 @@ Baden-Württemberg:
    Hausumringe:
       web_url: https://www.lgl-bw.de/unsere-themen/Produkte/Geodaten/Daten-des-Liegenschaftskatasters/hausumringe/
       license: proprietary
-      maximum_fee: 32.000 €
+      fee: 32.000 €
    Hauskoordinaten:
       web_url: https://www.lgl-bw.de/unsere-themen/Produkte/Geodaten/Daten-des-Liegenschaftskatasters/hauskoordinaten/
       license: proprietary
-      maximum_fee: 24.000 €
+      fee: 24.000 €
 
 Bayern:
    Hausumringe:
       web_url: https://www.ldbv.bayern.de/produkte/kataster/hausumringe.html
       license: proprietary
-      maximum_fee: 40.000 €
+      fee: 40.000 €
    Hauskoordinaten:
       web_url: https://www.ldbv.bayern.de/produkte/kataster/hauskoordinaten.html
       license: proprietary
-      maximum_fee: 27.000 €
+      fee: 27.000 €
 
 Berlin:
    Hausumringe:
@@ -61,31 +61,31 @@ Hessen:
    Hausumringe:
       web_url: https://hvbg.hessen.de/geoinformation/liegenschaftskataster/hausumringe
       license: proprietary
-      maximum_fee: 28.000 €
+      fee: 28.000 €
    Hauskoordinaten:
       web_url: https://hvbg.hessen.de/geoinformation/liegenschaftskataster/hauskoordinaten
       license: proprietary
-      maximum_fee: 19.000 €
+      fee: 19.000 €
 
 Mecklenburg-Vorpommern:
    Hausumringe:
       web_url: https://www.geoportal-mv.de/portal/Suche/Metadatenuebersicht/Details/Hausumringe%20(HU)%20-%20Land%20Mecklenburg-Vorpommern/e665bc47-44f4-4194-b5ee-1784a628ea3b
       license: proprietary
-      maximum_fee: 14.000 €
+      fee: 14.000 €
    Hauskoordinaten:
       web_url: https://www.geoportal-mv.de/portal/Suche/Metadatenuebersicht/Details/Hauskoordinaten%20(HK)%20-%20Land%20Mecklenburg-Vorpommern/b0a44b98-d29f-4d07-b486-3af0cbd6f4f4
       license: proprietary
-      maximum_fee: 9.000 €
+      fee: 9.000 €
 
 Niedersachsen:
    Hausumringe:
       web_url: https://www.lgln.niedersachsen.de/startseite/geodaten_karten/liegenschaftsinformationen_aus_alkis/hauskoordinaten_hausumringe/hauskoordinaten-und-hausumringe-90177.html
       license: proprietary
-      maximum_fee: 24.000 €
+      fee: 24.000 €
    Hauskoordinaten:
       web_url: https://www.lgln.niedersachsen.de/startseite/geodaten_karten/liegenschaftsinformationen_aus_alkis/hauskoordinaten_hausumringe/hauskoordinaten-und-hausumringe-90177.html
       license: proprietary
-      maximum_fee: 16.000 €
+      fee: 16.000 €
 
 Nordrhein-Westfalen:
    Hausumringe:
@@ -101,11 +101,11 @@ Rheinland-Pfalz:
    Hausumringe:
       web_url: https://lvermgeo.rlp.de/de/produkte/liegenschaftskataster/hauskoordinaten-hausumringe/
       license: proprietary
-      maximum_fee: 14.000 €
+      fee: 14.000 €
    Hauskoordinaten:
       web_url: https://lvermgeo.rlp.de/de/produkte/liegenschaftskataster/hauskoordinaten-hausumringe/
       license: proprietary
-      maximum_fee: 14.000 €
+      fee: 14.000 €
 
 Saarland:
    Hausumringe:
@@ -113,7 +113,7 @@ Saarland:
    Hauskoordinaten:
       web_url: https://www.shop.lvgl.saarland.de/index.php?option=com_virtuemart&view=category&virtuemart_category_id=1063&virtuemart_manufacturer_id=0&Itemid=198
       license: proprietary
-      maximum_fee: 8.000 €
+      fee: 8.000 €
 
 Sachsen:
    Hausumringe:
@@ -133,17 +133,17 @@ Sachsen-Anhalt:
    Hauskoordinaten:
       web_url: https://www.lvermgeo.sachsen-anhalt.de/de/amtliche_hauskoordinaten_lsa.html
       license: proprietary
-      maximum_fee: 10.000 €
+      fee: 10.000 €
 
 Schleswig-Holstein:
    Hausumringe:
       web_url: https://www.schleswig-holstein.de/DE/Landesregierung/LVERMGEOSH/Service/serviceGeobasisdaten/geodatenService_Geobasisdaten_sonstigeDaten.html
       license: proprietary
-      maximum_fee: 16.000 €
+      fee: 16.000 €
    Hauskoordinaten:
       web_url: https://www.schleswig-holstein.de/DE/Landesregierung/LVERMGEOSH/Service/serviceGeobasisdaten/geodatenService_Geobasisdaten_sonstigeDaten.html
       license: proprietary
-      maximum_fee: 12.000 €
+      fee: 12.000 €
 
 Thüringen:
    Hausumringe:

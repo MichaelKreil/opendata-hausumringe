@@ -9,31 +9,37 @@ process.chdir(__dirname)
 let data = fs.readFileSync('../data/bundeslaender.yaml', 'utf8')
 data = yaml.parse(data);
 
-let result = {};
+let result = {
+	columns: ['Hausumringe', 'Hauskoordinaten']
+}
 
 result.bundeslaender = Object.entries(data).map(([key,value]) => {
 	value.name = key;
-	prepare(value.Hausumringe);
-	prepare(value.Hauskoordinaten);
+	value.columns = [
+		prepare(value.Hausumringe),
+		prepare(value.Hauskoordinaten),
+	];
+	
 	return value;
 
 	function prepare(obj) {
 		switch (obj.license) {
 			case 'DL-DE-0': 
-				obj.color = '#0D0';
+				obj.color = '#009640';
 				obj.licenseLabel = 'DL-DE-0';
 			break;
 			case 'DL-DE-BY': 
-				obj.color = '#AD0';
+				obj.color = '#76b82a';
 				obj.licenseLabel = 'DL-DE-BY';
 			break;
 			case 'proprietary': 
-				obj.color = '#D00';
-				obj.licenseLabel = 'kostenpflichtig';
+				obj.color = '#f08482';
+				obj.licenseLabel = 'proprietär';
 			break;
 			default:
 				console.error(`Unknown license "${obj.license}"`)
 		}
+		return obj;
 	}
 })
 
