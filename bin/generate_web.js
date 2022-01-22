@@ -13,11 +13,11 @@ let result = {};
 
 result.bundeslaender = Object.entries(data).map(([key,value]) => {
 	value.name = key;
-	check(value.Hausumringe);
-	check(value.Hauskoordinaten);
+	prepare(value.Hausumringe);
+	prepare(value.Hauskoordinaten);
 	return value;
 
-	function check(obj) {
+	function prepare(obj) {
 		switch (obj.license) {
 			case 'DL-DE-0': 
 				obj.color = '#0D0';
@@ -29,7 +29,7 @@ result.bundeslaender = Object.entries(data).map(([key,value]) => {
 			break;
 			case 'proprietary': 
 				obj.color = '#D00';
-				obj.licenseLabel = `kostenpflichtig:<br>${obj.fee || '?'} €`;
+				obj.licenseLabel = 'kostenpflichtig';
 			break;
 			default:
 				console.error(`Unknown license "${obj.license}"`)

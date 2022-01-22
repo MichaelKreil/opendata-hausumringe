@@ -1,175 +1,158 @@
 
 Baden-Württemberg:
    Hausumringe:
-      web: https://www.lgl-bw.de/unsere-themen/Produkte/Geodaten/Daten-des-Liegenschaftskatasters/hausumringe/
+      web_url: https://www.lgl-bw.de/unsere-themen/Produkte/Geodaten/Daten-des-Liegenschaftskatasters/hausumringe/
       license: proprietary
-      fee: 32000
+      maximum_fee: 32.000 €
    Hauskoordinaten:
-      web: https://www.lgl-bw.de/unsere-themen/Produkte/Geodaten/Daten-des-Liegenschaftskatasters/hauskoordinaten/
+      web_url: https://www.lgl-bw.de/unsere-themen/Produkte/Geodaten/Daten-des-Liegenschaftskatasters/hauskoordinaten/
       license: proprietary
-      fee: 24000
+      maximum_fee: 24.000 €
 
 Bayern:
    Hausumringe:
-      web: https://www.ldbv.bayern.de/produkte/kataster/hausumringe.html
+      web_url: https://www.ldbv.bayern.de/produkte/kataster/hausumringe.html
       license: proprietary
-      fee: 40000
+      maximum_fee: 40.000 €
    Hauskoordinaten:
-      web: https://www.ldbv.bayern.de/produkte/kataster/hauskoordinaten.html
+      web_url: https://www.ldbv.bayern.de/produkte/kataster/hauskoordinaten.html
       license: proprietary
-      fee: 27000
+      maximum_fee: 27.000 €
 
 Berlin:
    Hausumringe:
-      web: https://daten.berlin.de/datensaetze/alkis-berlin-geb%C3%A4ude-wfs
+      web_url: https://daten.berlin.de/datensaetze/alkis-berlin-geb%C3%A4ude-wfs
       license: DL-DE-BY
-      fee: 0
       parse_cmd: 'ogr2ogr -overwrite --debug ON --config OGR_WFS_PAGE_SIZE 2000 -f GeoJSONSeq data/berlin_hausumringe.geojsonl WFS:"https://fbinter.stadt-berlin.de/fb/wfs/data/senstadt/s_wfs_alkis_gebaeudeflaechen?outputFormat=application%2Fgeo%2Bjson" s_wfs_alkis_gebaeudeflaechen -s_srs EPSG:25833 -t_srs EPSG:4326'
    Hauskoordinaten:
-      web: https://daten.berlin.de/datensaetze/alkis-berlin-geb%C3%A4ude-wfs
+      web_url: https://daten.berlin.de/datensaetze/alkis-berlin-geb%C3%A4ude-wfs
       license: DL-DE-BY
-      fee: 0
       parse_cmd: 'ogr2ogr -overwrite --debug ON --config OGR_WFS_PAGE_SIZE 3000 -f GeoJSONSeq data/berlin_hauskoordinaten.geojsonl WFS:"https://fbinter.stadt-berlin.de/fb/wfs/data/senstadt/s_wfs_adressenberlin?outputFormat=application%2Fgeo%2Bjson" s_wfs_adressenberlin -s_srs EPSG:25833 -t_srs EPSG:4326'
 
 Brandenburg:
    Hausumringe:
-      web: https://geobasis-bb.de/lgb/de/geodaten/liegenschaftskataster/hausumringe/
+      web_url: https://geobasis-bb.de/lgb/de/geodaten/liegenschaftskataster/hausumringe/
       license: DL-DE-BY
-      fee: 0
       parse_cmd: 'ogr2ogr -progress -f GeoJSONSeq brandenburg_hausumringe.geojsonl GEBAEUDE_10-51_gebaeude.json'
    Hauskoordinaten:
-      web: https://geobasis-bb.de/lgb/de/geodaten/liegenschaftskataster/georeferenzierte-adresse/
+      web_url: https://geobasis-bb.de/lgb/de/geodaten/liegenschaftskataster/georeferenzierte-adresse/
       license: DL-DE-BY
-      fee: 0
       parse_cmd: 'ogr2ogr -overwrite --debug ON -f GeoJSONSeq data/brandenburg_hauskoordinaten.geojsonl WFS:"https://isk.geobasis-bb.de/ows/dog_wfs" "dog:Hauskoordinaten"'
 
 Bremen:
    Hausumringe:
-      web: https://www.geo.bremen.de/produkte/katasterprodukte/hausumringe-und-hauskoordinaten-12289
+      web_url: https://www.geo.bremen.de/produkte/katasterprodukte/hausumringe-und-hauskoordinaten-12289
       license: proprietary
-      fee:
    Hauskoordinaten:
-      web: https://www.geo.bremen.de/produkte/katasterprodukte/hausumringe-und-hauskoordinaten-12289
+      web_url: https://www.geo.bremen.de/produkte/katasterprodukte/hausumringe-und-hauskoordinaten-12289
       license: proprietary
-      fee:
 
 Hamburg:
    Hausumringe:
-      web: https://suche.transparenz.hamburg.de/dataset/inspire-hh-gebaeude-alkis?forceWeb=true
+      web_url: https://suche.transparenz.hamburg.de/dataset/inspire-hh-gebaeude-alkis?forceWeb=true
       license: DL-DE-BY
-      fee: 0
       parse_cmd: 'ogr2ogr -progress -s_srs EPSG:25832 -t_srs EPSG:4326 -f GeoJSONSeq hamburg_hausumringe.geojsonl result.gml Building'
    Hauskoordinaten:
-      web: https://suche.transparenz.hamburg.de/dataset/inspire-hh-adressen-hauskoordinaten8?forceWeb=true
+      web_url: https://suche.transparenz.hamburg.de/dataset/inspire-hh-adressen-hauskoordinaten8?forceWeb=true
       license: DL-DE-BY
-      fee: 0
       parse_cmd: 'ogr2ogr -progress -s_srs EPSG:25832 -t_srs EPSG:4326 -f GeoJSONSeq hamburg_hauskoordinaten.geojsonl Address_25832_all.gml Address'
 
 Hessen:
    Hausumringe:
-      web: https://hvbg.hessen.de/geoinformation/liegenschaftskataster/hausumringe
+      web_url: https://hvbg.hessen.de/geoinformation/liegenschaftskataster/hausumringe
       license: proprietary
-      fee: 28000
+      maximum_fee: 28.000 €
    Hauskoordinaten:
-      web: https://hvbg.hessen.de/geoinformation/liegenschaftskataster/hauskoordinaten
+      web_url: https://hvbg.hessen.de/geoinformation/liegenschaftskataster/hauskoordinaten
       license: proprietary
-      fee: 19000
+      maximum_fee: 19.000 €
 
 Mecklenburg-Vorpommern:
    Hausumringe:
-      web: https://www.geoportal-mv.de/portal/Suche/Metadatenuebersicht/Details/Hausumringe%20(HU)%20-%20Land%20Mecklenburg-Vorpommern/e665bc47-44f4-4194-b5ee-1784a628ea3b
+      web_url: https://www.geoportal-mv.de/portal/Suche/Metadatenuebersicht/Details/Hausumringe%20(HU)%20-%20Land%20Mecklenburg-Vorpommern/e665bc47-44f4-4194-b5ee-1784a628ea3b
       license: proprietary
-      fee: 14000
+      maximum_fee: 14.000 €
    Hauskoordinaten:
-      web: https://www.geoportal-mv.de/portal/Suche/Metadatenuebersicht/Details/Hauskoordinaten%20(HK)%20-%20Land%20Mecklenburg-Vorpommern/b0a44b98-d29f-4d07-b486-3af0cbd6f4f4
+      web_url: https://www.geoportal-mv.de/portal/Suche/Metadatenuebersicht/Details/Hauskoordinaten%20(HK)%20-%20Land%20Mecklenburg-Vorpommern/b0a44b98-d29f-4d07-b486-3af0cbd6f4f4
       license: proprietary
-      fee: 9000
+      maximum_fee: 9.000 €
 
 Niedersachsen:
    Hausumringe:
-      web: https://www.lgln.niedersachsen.de/startseite/geodaten_karten/liegenschaftsinformationen_aus_alkis/hauskoordinaten_hausumringe/hauskoordinaten-und-hausumringe-90177.html
+      web_url: https://www.lgln.niedersachsen.de/startseite/geodaten_karten/liegenschaftsinformationen_aus_alkis/hauskoordinaten_hausumringe/hauskoordinaten-und-hausumringe-90177.html
       license: proprietary
-      fee: 24000
+      maximum_fee: 24.000 €
    Hauskoordinaten:
-      web: https://www.lgln.niedersachsen.de/startseite/geodaten_karten/liegenschaftsinformationen_aus_alkis/hauskoordinaten_hausumringe/hauskoordinaten-und-hausumringe-90177.html
+      web_url: https://www.lgln.niedersachsen.de/startseite/geodaten_karten/liegenschaftsinformationen_aus_alkis/hauskoordinaten_hausumringe/hauskoordinaten-und-hausumringe-90177.html
       license: proprietary
-      fee: 16000
+      maximum_fee: 16.000 €
 
 Nordrhein-Westfalen:
    Hausumringe:
-      web: https://open.nrw/dataset/3f08a580-48ec-43c1-936d-d62f89c21cc9
+      web_url: https://open.nrw/dataset/3f08a580-48ec-43c1-936d-d62f89c21cc9
       license: DL-DE-0
-      fee: 0
       parse_cmd: 'ogr2ogr -overwrite -progress -f GeoJSONSeq -s_srs EPSG:4647 -t_srs EPSG:4326 nrw_hausumringe.geojsonl hu_nw_shp_202107.shp "hu_nw_shp_202107"'
    Hauskoordinaten:
-      web: https://open.nrw/dataset/172a0ba8-d470-47c1-ac89-b85f8190ac7e
+      web_url: https://open.nrw/dataset/172a0ba8-d470-47c1-ac89-b85f8190ac7e
       license: DL-DE-0
-      fee: 0
       parse_cmd: '{ echo "NBA;OI;QUA;LAN;RBZ;KRS;GMD;OTT;SSS;HNR;ADZ;X;Y;STN;Datum"; cat gebref.txt; } | sed -r "s/,/./g" | sed -r "s/;/,/g" | ogr2ogr -overwrite -f GeoJSONSeq -s_srs EPSG:4647 -t_srs EPSG:4326 -oo X_POSSIBLE_NAMES=X -oo Y_POSSIBLE_NAMES=Y nrw_hauskoordinaten.geojsonl CSV:/vsistdin/'
 
 Rheinland-Pfalz:
    Hausumringe:
-      web: https://lvermgeo.rlp.de/de/produkte/liegenschaftskataster/hauskoordinaten-hausumringe/
+      web_url: https://lvermgeo.rlp.de/de/produkte/liegenschaftskataster/hauskoordinaten-hausumringe/
       license: proprietary
-      fee: 14000
+      maximum_fee: 14.000 €
    Hauskoordinaten:
-      web: https://lvermgeo.rlp.de/de/produkte/liegenschaftskataster/hauskoordinaten-hausumringe/
+      web_url: https://lvermgeo.rlp.de/de/produkte/liegenschaftskataster/hauskoordinaten-hausumringe/
       license: proprietary
-      fee: 14000
+      maximum_fee: 14.000 €
 
 Saarland:
    Hausumringe:
-      web:
       license: proprietary
-      fee:
    Hauskoordinaten:
-      web: https://www.shop.lvgl.saarland.de/index.php?option=com_virtuemart&view=category&virtuemart_category_id=1063&virtuemart_manufacturer_id=0&Itemid=198
+      web_url: https://www.shop.lvgl.saarland.de/index.php?option=com_virtuemart&view=category&virtuemart_category_id=1063&virtuemart_manufacturer_id=0&Itemid=198
       license: proprietary
-      fee: 8000
+      maximum_fee: 8.000 €
 
 Sachsen:
    Hausumringe:
-      web: https://www.geodaten.sachsen.de/downloadbereich-hausumringe-4174.html
+      web_url: https://www.geodaten.sachsen.de/downloadbereich-hausumringe-4174.html
       license: DL-DE-BY
-      fee: 0
       parse_cmd: 'ogr2ogr -progress -f GeoJSONSeq -s_srs EPSG:25833 -t_srs EPSG:4326 sachsen_hausumringe.geojsonl umring.shp umring'
    Hauskoordinaten:
-      web: https://www.geodaten.sachsen.de/downloadbereich-hauskoordinaten-4172.html
+      web_url: https://www.geodaten.sachsen.de/downloadbereich-hauskoordinaten-4172.html
       license: DL-DE-BY
-      fee: 0
       parse_cmd: '{ echo "NBA;OI;QUA;LAN;RBZ;KRS;GMD;OTT;SSS;HNR;ADZ;X;Y;STN;PLZ;ONM;ZON;POT"; cat adressen.txt; } | sed -r "s/,/./g" | sed -r "s/;/,/g" | ogr2ogr -overwrite -f GeoJSONSeq -s_srs EPSG:25833 -t_srs EPSG:4326 -oo X_POSSIBLE_NAMES=X -oo Y_POSSIBLE_NAMES=Y sachsen_hauskoordinaten.geojsonl CSV:/vsistdin/'
 
 Sachsen-Anhalt:
    Hausumringe:
-      web: https://www.lvermgeo.sachsen-anhalt.de/de/kostenfreie_geobasisdaten_lvermgeo.html
+      web_url: https://www.lvermgeo.sachsen-anhalt.de/de/kostenfreie_geobasisdaten_lvermgeo.html
       license: DL-DE-BY
-      fee: 0
       parse_cmd: 'ogr2ogr -progress -f GeoJSONSeq -s_srs EPSG:4647 -t_srs EPSG:4326 sachsen-anhalt_hausumringe.geojsonl LS489_2021_03_Gebaeude_LSA.shp'
    Hauskoordinaten:
-      web: https://www.lvermgeo.sachsen-anhalt.de/de/amtliche_hauskoordinaten_lsa.html
+      web_url: https://www.lvermgeo.sachsen-anhalt.de/de/amtliche_hauskoordinaten_lsa.html
       license: proprietary
-      fee: 10000
+      maximum_fee: 10.000 €
 
 Schleswig-Holstein:
    Hausumringe:
-      web: https://www.schleswig-holstein.de/DE/Landesregierung/LVERMGEOSH/Service/serviceGeobasisdaten/geodatenService_Geobasisdaten_sonstigeDaten.html
+      web_url: https://www.schleswig-holstein.de/DE/Landesregierung/LVERMGEOSH/Service/serviceGeobasisdaten/geodatenService_Geobasisdaten_sonstigeDaten.html
       license: proprietary
-      fee: 16000
+      maximum_fee: 16.000 €
    Hauskoordinaten:
-      web: https://www.schleswig-holstein.de/DE/Landesregierung/LVERMGEOSH/Service/serviceGeobasisdaten/geodatenService_Geobasisdaten_sonstigeDaten.html
+      web_url: https://www.schleswig-holstein.de/DE/Landesregierung/LVERMGEOSH/Service/serviceGeobasisdaten/geodatenService_Geobasisdaten_sonstigeDaten.html
       license: proprietary
-      fee: 12000
+      maximum_fee: 12.000 €
 
 Thüringen:
    Hausumringe:
-      web: https://www.geoportal-th.de/de-de/Downloadbereiche/Download-Offene-Geodaten-Thüringen
+      web_url: https://www.geoportal-th.de/de-de/Downloadbereiche/Download-Offene-Geodaten-Thüringen
       license: DL-DE-BY
-      fee: 0
       parse_cmd: 'ogr2ogr -progress -f GeoJSONSeq -s_srs EPSG:4647 -t_srs EPSG:4326 thueringen_hausumringe.geojsonl gebaeude-th.shp'
    Hauskoordinaten:
-      web: https://www.geoportal-th.de/de-de/Downloadbereiche/Download-Offene-Geodaten-Thüringen
+      web_url: https://www.geoportal-th.de/de-de/Downloadbereiche/Download-Offene-Geodaten-Thüringen
       license: DL-DE-BY
-      fee: 0
       parse_cmd: '{ echo "NBA;OI;QUA;LAN;RBZ;KRS;GMD;OTT;SSS;HNR;ADZ;X;Y;STN;PLZ;ONM;ZON;POT"; cat adressen-th.txt; } | sed -r "s/,/./g" | sed -r "s/;/,/g" | ogr2ogr -overwrite -f GeoJSONSeq -s_srs EPSG:4647 -t_srs EPSG:4326 -oo X_POSSIBLE_NAMES=X -oo Y_POSSIBLE_NAMES=Y thueringen_hauskoordinaten.geojsonl CSV:/vsistdin/'
 
 

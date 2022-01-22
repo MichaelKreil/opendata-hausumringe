@@ -12,9 +12,23 @@
 		}
 		table {
 			margin: 50px 0;
+			border-collapse: collapse;
 		}
-		table td {
-			border-top: solid 0.5px #ddd;
+			table td {
+				border-top: solid 0.5px #ddd;
+			}
+			table td, table th {
+				padding: 4px 10px;
+			}
+			table tr:hover td {
+				background: #eee;
+			}
+		a {
+			text-decoration: none;
+			transition: stroke 0.1s;
+		}
+		a:hover {
+			stroke: #000;
 		}
 	</style>
 </head>
@@ -41,10 +55,30 @@
 			<tr>
 				<td>{{name}}</td>
 				{{#Hausumringe}}
-				<td style="color: {{color}}">{{{licenseLabel}}}</td>
+				<td style="color: {{color}}; stroke: {{color}}">
+					{{licenseLabel}}
+					{{#web_url}}
+					<a href="{{web_url}}">
+						<svg style="height:1em;" viewBox="3 0 20 24" xmlns="http://www.w3.org/2000/svg">
+							<path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+					</a>
+					{{/web_url}}
+					{{#maximum_fee}}<br><small>max {{maximum_fee}}</small>{{/maximum_fee}}
+				</td>
 				{{/Hausumringe}}
 				{{#Hauskoordinaten}}
-				<td style="color: {{color}}">{{{licenseLabel}}}</td>
+				<td style="color: {{color}}; stroke: {{color}}">
+					{{licenseLabel}}
+					{{#web_url}}
+					<a href="{{web_url}}">
+						<svg style="height:1em;" viewBox="3 0 20 24" xmlns="http://www.w3.org/2000/svg">
+							<path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+					</a>
+					{{/web_url}}
+					{{#maximum_fee}}<br><small>max {{maximum_fee}}</small>{{/maximum_fee}}
+				</td>
 				{{/Hauskoordinaten}}
 			</tr>
 		{{/bundeslaender}}
