@@ -24,6 +24,7 @@ result.bundeslaender = Object.entries(data).map(([key,value]) => {
 
 	function prepare(obj) {
 		switch (obj.license) {
+			case 'lizenzfrei': 
 			case 'DL-DE-0': 
 				obj.color = '#009640';
 				obj.licenseLabel = 'DL-DE-0';

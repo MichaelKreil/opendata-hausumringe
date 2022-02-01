@@ -59,13 +59,11 @@ Hamburg:
 
 Hessen:
    Hausumringe:
-      web_url: https://hvbg.hessen.de/geoinformation/liegenschaftskataster/hausumringe
-      license: proprietary
-      fee: 28.000 €
+      web_url: https://gds.hessen.de/INTERSHOP/web/WFS/HLBG-Geodaten-Site/de_DE/-/EUR/ViewDownloadcenter-Start
+      license: lizenzfrei
    Hauskoordinaten:
-      web_url: https://hvbg.hessen.de/geoinformation/liegenschaftskataster/hauskoordinaten
-      license: proprietary
-      fee: 19.000 €
+      web_url: https://gds.hessen.de/INTERSHOP/web/WFS/HLBG-Geodaten-Site/de_DE/-/EUR/ViewDownloadcenter-Start
+      license: lizenzfrei
 
 Mecklenburg-Vorpommern:
    Hausumringe:
