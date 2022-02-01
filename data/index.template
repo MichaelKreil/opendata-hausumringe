@@ -9,20 +9,20 @@
 			font-family: sans-serif;
 			max-width: 600px;
 			margin: 100px auto;
+			font-size: 13px;
 		}
 		table {
-			margin: 50px 0;
+			margin: 50px auto;
 			border-collapse: collapse;
-			width: 100%;
 		}
-			table td {
-				border-top: solid 0.5px #ddd;
-			}
 			table td, table th {
 				padding: 4px 10px;
 				text-align: left;
 			}
-			table tr:hover td {
+			table.hover td {
+				border-top: solid 0.5px #ddd;
+			}
+			table.hover tr:hover td {
 				background: #eee;
 			}
 		a {
@@ -38,17 +38,23 @@
 
 	<table>
 		<tr>
-			<th>
-				Lizenzen Hausumringe<br>
-				{{{mapUmringe}}}
+			<th width="50%" style="text-align: center">
+				Lizenzen Hausumringe
 			</th>
-			<th>
-				Lizenzen Hauskoordinaten<br>
-				{{{mapKoordinaten}}}
+			<th width="50%" style="text-align: center">
+				Lizenzen Hauskoordinaten
 			</th>
 		</tr>
+		<tr>
+			<td>
+				{{{mapUmringe}}}
+			</td>
+			<td>
+				{{{mapKoordinaten}}}
+			</td>
+		</tr>
 	</table>
-	<table>
+	<table class="hover">
 		<thead>
 			<tr>
 				<th>Bundesland</th>
@@ -71,7 +77,7 @@
 						</svg>
 					</a>
 					{{/web_url}}
-					{{#fee}}<br><small>Gebühr: {{fee}}</small>{{/fee}}
+					{{#fee}}<br><small>Gebühr&nbsp;min.: <span style="white-space:nowrap;">{{fee}}</span></small>{{/fee}}
 				</td>
 				{{/columns}}
 			</tr>
