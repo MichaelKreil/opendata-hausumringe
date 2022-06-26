@@ -1,4 +1,5 @@
-"use strict"
+#!/usr/bin/env -S node --max-old-space-size=4096
+'use strict'
 
 const fs = require('fs')
 const yaml = require('yaml')
