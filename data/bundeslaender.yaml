@@ -1,11 +1,11 @@
 
 Baden-Württemberg:
    Hausumringe:
-      web_url: https://www.lgl-bw.de/unsere-themen/Produkte/Geodaten/Daten-des-Liegenschaftskatasters/hausumringe/
+      web_url: https://www.lgl-bw.de/Produkte/Liegenschaftskataster/Hausumringe/
       license: proprietary
       fee: 32.000 €
    Hauskoordinaten:
-      web_url: https://www.lgl-bw.de/unsere-themen/Produkte/Geodaten/Daten-des-Liegenschaftskatasters/hauskoordinaten/
+      web_url: https://www.lgl-bw.de/Produkte/Liegenschaftskataster/Hauskoordinaten/
       license: proprietary
       fee: 24.000 €
 
@@ -107,7 +107,9 @@ Rheinland-Pfalz:
 
 Saarland:
    Hausumringe:
+      web_url: https://testshop.lvgl.saarland.de/?option=com_virtuemart&view=category&virtuemart_category_id=1100&Itemid=408
       license: proprietary
+      fee: 8.000 €
    Hauskoordinaten:
       web_url: https://www.shop.lvgl.saarland.de/index.php?option=com_virtuemart&view=category&virtuemart_category_id=1063&virtuemart_manufacturer_id=0&Itemid=198
       license: proprietary
