@@ -71,7 +71,7 @@
 				<td style="color: {{color}}; stroke: {{color}}">
 					{{licenseLabel}}
 					{{#web_url}}
-					<a href="{{web_url}}">
+					<a href="{{{web_url}}}">
 						<svg style="height:1em;" viewBox="3 0 20 24" xmlns="http://www.w3.org/2000/svg">
 							<path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
 						</svg>
